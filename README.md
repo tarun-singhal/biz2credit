@@ -62,3 +62,9 @@ see the below url for the frontend:
 1. http://127.0.0.1:8000/blog-list/ : To get the list of story
 2. http://127.0.0.1:8000/blog    :: To create the story 
 
+
+### To setup the Database
+
+1. Restore the databse form the dump folder in mongodb
+2. DB name: blog
+3. collection name: author, story
