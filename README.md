@@ -39,14 +39,23 @@ HTTPBASIC Auth: API authenitication require for all end points
 **password: SuperSecretPwd**
 
 ## To setup the Django project
+**Step 1:** Go to project biz2credit directory
 **Step1**: install the virtualenv setup
 $ virtualenv env
 
-** Step 2:** Now, activate the virtual environment with the following command:
+**Step 2:** Now, activate the virtual environment with the following command:
 $ . env/bin/activate
 
 **Step 3:** install django
 $ pip install django
 
 **Step 4** : Install python3 dependencies via pip3
+
+**Step5**: Run the APP
+$ python3 manage.py runserver
+Wil run on port no 8000
+
+see the below url for the frontend:
+1. http://127.0.0.1:8000/blog-list/ : To get the list of story
+2. http://127.0.0.1:8000/blog    :: To create the story 
 
