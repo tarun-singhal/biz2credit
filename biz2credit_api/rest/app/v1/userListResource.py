@@ -18,7 +18,7 @@ import base64
 # Import the helpers module
 helper_module = imp.load_source('*', './app/helpers.py')
 # Select the database
-db = client.test
+db = client.blog
 # Select the collection
 collection = db.author
 api = Api(app, prefix="/api/v1")
@@ -68,9 +68,6 @@ class UserListResource(Resource):
             except Exception as e:
                 return {"error": "Error Found, "+str(e)}, 400
 
-            for i in range(0, len(body)):
-                body[i]['created_time'] = datetime.now()
-                # user_pass = body[i]['password'] if 'password' in body[i] else " "
                 #TODO: Need to check for the password hash issue
                 # if user_pass != " ":
                 #     password_hash =  base64.b64encode(user_pass)

@@ -15,7 +15,7 @@ from bson import json_util
 helper_module = imp.load_source('*', './app/helpers.py')
 
 # Select the database
-db = client.test
+db = client.blog
 # Select the collection
 collection = db.story
 
