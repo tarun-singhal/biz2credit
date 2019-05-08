@@ -1,0 +1,9 @@
+# install the virtualenv setup
+$ virtualenv env
+
+Now, activate the virtual environment with the following command:
+$ . env/bin/activate
+
+# install django
+$ pip install django
+
