@@ -1,2 +1,3 @@
 *.pyc
 biz2credit_api/lib/*
+biz2credit_api/bin/*
