@@ -14,6 +14,7 @@ from datetime import datetime
 from bson import json_util
 # from flask.ext.bcrypt import Bcrypt
 import base64
+from flask_jwt import JWT, jwt_required, current_identity
 
 # Import the helpers module
 helper_module = imp.load_source('*', './app/helpers.py')
@@ -33,7 +34,8 @@ def verify(username, password):
 
 class UserListResource(Resource):
 
-    @auth.login_required
+    # @auth.login_required
+    @jwt_required()
     def get(self):
         """
         To get the User listing
