@@ -38,6 +38,20 @@ HTTPBASIC Auth: API authenitication require for all end points
 
 **password: SuperSecretPwd**
 
+With the help of JWT Authentication mechanism
+1. run the api to get the auth token 
+POST /auth HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "abcxyz"
+}
+
+2. GET /user HTTP/1.1
+Authorization: JWT <jwt-token>
+
 ## To setup the Django project
 **Step 1:** Go to project biz2credit directory
 
